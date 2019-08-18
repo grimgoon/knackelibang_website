@@ -1,18 +1,75 @@
-@import "~bulma/sass/utilities/initial-variables"
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+  font-family: 'Roboto', 'Open Sans', sans-serif
+	font: inherit
+	vertical-align: baseline
 
-// Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block;
 
-.navbar .navbar-menu
-  box-shadow:none !important
+body 
+	line-height: 1
 
+ol, ul 
+	list-style: none
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+
+// Knackelibang Colors:
+
+$primary: #000000
+$primary-invert: #ffffff
+$body-color-invert: #2b2523
+
+.navbar
+  position: sticky
+  display: flex
+  align-items: center
+  background-color: $body-color-invert
+  width: 100%
+  top: 0
+  height: 60px
+  z-index: 999
+  
+.navbar a
+  margin-left: 8px
+  color: $primary-invert
+  font-style: inherit
+  text-decoration: none
+
+
+.menuItems
+  margin-left: 40px
+  
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -84,28 +141,12 @@ footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
-//Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
-
-
-.menu-label
-  font-size: 1em !important
-  text-align: left
-.menu-list
-  list-style: none !important
-  text-align: left
 .social
   padding: 2em
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
-    background-color: $white-ter
+    background-color: $primary
     margin: .5em
     width: 1em
     height: 1em
@@ -123,18 +164,4 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 
-@import "~bulma"
 
-
-// responsiveness
-+tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
-
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
