@@ -1,4 +1,5 @@
 ---
 templateKey: social-page
-facebook: false
+facebook: true
 ---
+
