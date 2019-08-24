@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,10 +34,6 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav className="navbar" role="navigation" aria-label="main-navigation">
-        <Link to="/" className="navbar-item" title="Knackelibang">
-          <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-        </Link>
-
         <div className="menuItems">
           <Link className="navbar-item" to="/about">
             Home
