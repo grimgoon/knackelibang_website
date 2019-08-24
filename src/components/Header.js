@@ -3,7 +3,8 @@ import { Link } from "gatsby";
 import logo from "../img/logo.svg";
 import SocialIcon from "./SocialIcon";
 
-const Header = props => {
+const Header = ({ socials }) => {
+console.log(socials);
   return (
     <div className="header">
       <Link to="/" className="logo" title="Knackelibang">

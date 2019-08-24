@@ -6,9 +6,11 @@ import Header from "./Header";
 import Carousel from "./Carousel";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
-import { withPrefix } from "gatsby";
+import { withPrefix, graphql, StaticQuery } from "gatsby";
 
-const TemplateWrapper = ({ children }) => {
+export const TemplateWrapper = (props) => {
+  const { children, socials, data } = props;
+  console.log(props)
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -54,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
           content="m7ArQUAtrMwV3aAXHLO-UUt6uAFpYmQqap6Cx279lxU"
         />
       </Helmet>
-      <Header />
+      <Header socials={socials} />
       <Carousel />
       <Navbar />
       <div>{children}</div>
@@ -63,4 +65,17 @@ const TemplateWrapper = ({ children }) => {
   );
 };
 
-export default TemplateWrapper;
+export default (props) => (
+  <StaticQuery query={pageQuery} render={data => <TemplateWrapper data={data} {...props}/>} /> 
+)
+
+const pageQuery = graphql`
+query {
+  markdownRemark(frontmatter: {templateKey: {eq: "social-page"}}) {
+    frontmatter {
+      facebook
+    }
+  }
+}
+`
+
