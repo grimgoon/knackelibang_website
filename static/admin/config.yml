@@ -62,7 +62,7 @@ collections:
   - name: "settings"
     label: "Settings"
     files: 
-      - file: "src/settings/social/index.md"
+      - file: "src/pages/settings/social/index.md"
         label: "Social Media"
         name: "social"
         fields:
