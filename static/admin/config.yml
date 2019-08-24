@@ -66,5 +66,5 @@ collections:
         label: "Social Media"
         name: "social"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "social-media"}
-          - {label: Facebook, name: facebook, widget: boolean}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "social-media-page"}
+        - {label: Facebook, name: facebook, widget: boolean}
