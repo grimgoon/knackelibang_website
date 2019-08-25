@@ -8,9 +8,9 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix, graphql, StaticQuery } from "gatsby";
 
-export const TemplateWrapper = (props) => {
+export const TemplateWrapper = props => {
   const { children, socials, data } = props;
-  console.log(props)
+  console.log(props);
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -65,9 +65,12 @@ export const TemplateWrapper = (props) => {
   );
 };
 
-export default (props) => (
-  <StaticQuery query={pageQuery} render={data => <TemplateWrapper data={data} {...props}/>} /> 
-)
+export default props => (
+  <StaticQuery
+    query={pageQuery}
+    render={data => <TemplateWrapper data={data} {...props} />}
+  />
+);
 
 const pageQuery = graphql`
 query {
@@ -85,6 +88,21 @@ query {
       twitterUrl
     }
   }
+  gallery:  markdownRemark(frontmatter: {templateKey: {eq: "gallery-page"}}) {
+    frontmatter {
+     gallery {
+      images {
+        title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1920, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+      	  }
+    	  }
+		  }
+	  }
+  } 
 }
-`
-
+}
+`;
