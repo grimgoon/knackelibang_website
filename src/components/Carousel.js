@@ -1,11 +1,10 @@
 import React from "react";
-import Img from "gatsby-image";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import GatsbyImage from "gatsby-image";
 
 const Carousel = props => {
-  var settings = {
+  const { data } = props;
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -13,28 +12,14 @@ const Carousel = props => {
     slidesToScroll: 1
   };
 
-  return (
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
-  );
+  const images = data.images.map((image, index) => {
+    console.log(image.image.childImageSharp.fixed);
+    return <GatsbyImage key={index} fixed={image.image.childImageSharp.fixed} />;
+  });
+
+  console.log(images);
+
+  return <Slider {...settings}>{images}</Slider>;
 };
 
 export default Carousel;

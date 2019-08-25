@@ -13,7 +13,7 @@ export const TemplateWrapper = props => {
   console.log(props);
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <div className="wrapper">
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -98,8 +98,8 @@ query {
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 1000, height: 563 quality: 100) {
+              ...GatsbyImageSharpFixed
             }
       	  }
     	  }
