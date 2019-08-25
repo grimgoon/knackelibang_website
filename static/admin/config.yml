@@ -68,8 +68,8 @@ collections:
         - {label: Youtube URL, name: youtubeUrl, widget: string, required: false}
         - {label: Twitter, name: twitter, widget: boolean, required: false}
         - {label: Twitter URL, name: twitterUrl, widget: string, required: false}
-    - file: "src/pages/settings/carousel/index.md"
-      label: "Knackelibang of the Day"
-      name: "carousel"
-      fields:
-      - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}]}]}
+      - file: "src/pages/settings/carousel/index.md"
+        label: "Knackelibang of the Day"
+        name: "carousel"
+        fields:
+        - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}]}]}
