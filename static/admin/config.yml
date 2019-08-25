@@ -74,4 +74,4 @@ collections:
         - {label: Youtube, name: youtube, widget: boolean}
         - {label: Youtube URL, name: youtubeUrl, widget: String}
         - {label: Twitter, name: twitter, widget: boolean}
-        - {label: Twitter URL, name: twitterUrl, widget: String
+        - {label: Twitter URL, name: twitterUrl, widget: String}
