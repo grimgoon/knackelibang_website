@@ -1,6 +1,7 @@
 ---
 templateKey: social-page
 facebook: true
-facebookUrl: "boop.com"
+instagram: false
+facebookUrl: boop.com
 ---
 

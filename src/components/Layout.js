@@ -74,6 +74,15 @@ query {
   socials: markdownRemark(frontmatter: {templateKey: {eq: "social-page"}}) {
     frontmatter {
       facebook
+      facebookUrl
+      instagram
+      instagramUrl
+      twitter
+      twitterUrl
+      youtube
+      youtubeUrl
+      twitter
+      twitterUrl
     }
   }
 }
