@@ -1,7 +1,11 @@
 ---
 templateKey: social-page
 facebook: false
-facebookUrl: boop.com
+facebookUrl: ''
 instagram: true
+instagramUrl: ''
+youtube: false
+youtubeUrl: ''
+twitter: true
+twitterUrl: ''
 ---
-
