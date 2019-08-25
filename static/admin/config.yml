@@ -68,3 +68,10 @@ collections:
         fields:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "social-media-page"}
         - {label: Facebook, name: facebook, widget: boolean}
+        - {label: Facebook URL, name: facebookUrl, widget: String}
+        - {label: Instagram, name: instagram, widget: boolean}
+        - {label: Instagram URL, name: instagramUrl, widget: String}
+        - {label: Youtube, name: youtube, widget: boolean}
+        - {label: Youtube URL, name: youtubeUrl, widget: String}
+        - {label: Twitter, name: twitter, widget: boolean}
+        - {label: Twitter URL, name: twitterUrl, widget: String

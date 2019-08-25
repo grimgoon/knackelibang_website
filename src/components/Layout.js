@@ -56,7 +56,7 @@ export const TemplateWrapper = (props) => {
           content="m7ArQUAtrMwV3aAXHLO-UUt6uAFpYmQqap6Cx279lxU"
         />
       </Helmet>
-      <Header socials={socials} />
+      <Header socials={data.socials.frontmatter} />
       <Carousel />
       <Navbar />
       <div>{children}</div>
@@ -71,7 +71,7 @@ export default (props) => (
 
 const pageQuery = graphql`
 query {
-  markdownRemark(frontmatter: {templateKey: {eq: "social-page"}}) {
+  socials: markdownRemark(frontmatter: {templateKey: {eq: "social-page"}}) {
     frontmatter {
       facebook
     }
