@@ -68,10 +68,10 @@ collections:
         fields:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "social-media-page"}
         - {label: Facebook, name: facebook, widget: boolean}
-        - {label: Facebook URL, name: facebookUrl, widget: string}
+        - {label: Facebook URL, name: facebookUrl, widget: string, , required: false}
         - {label: Instagram, name: instagram, widget: boolean}
-        - {label: Instagram URL, name: instagramUrl, widget: string}
+        - {label: Instagram URL, name: instagramUrl, widget: string, , required: false}
         - {label: Youtube, name: youtube, widget: boolean}
-        - {label: Youtube URL, name: youtubeUrl, widget: string}
+        - {label: Youtube URL, name: youtubeUrl, widget: string, , required: false}
         - {label: Twitter, name: twitter, widget: boolean}
-        - {label: Twitter URL, name: twitterUrl, widget: string}
+        - {label: Twitter URL, name: twitterUrl, widget: string, required: false}
