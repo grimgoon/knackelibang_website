@@ -1,4 +1,5 @@
 ---
+templateKey: gallery-page
 gallery:
   images:
     - image: /img/blog-index.jpg
