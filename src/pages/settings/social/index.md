@@ -1,7 +1,7 @@
 ---
 templateKey: social-page
 facebook: true
-facebookUrl: www.facebook.com/battlerite
+facebookUrl: http://www.facebook.com/battlerite
 instagram: true
 instagramUrl: ''
 youtube: false
