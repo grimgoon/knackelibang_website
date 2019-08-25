@@ -1,7 +1,7 @@
 ---
 templateKey: social-page
-facebook: false
-facebookUrl: boop.com
+facebook: true
+facebookUrl: facebook.com/battlerite
 instagram: true
 ---
 
