@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import GatsbyImage from "gatsby-image";
-import ArrowImage from "../img/slider-nav.png";
 
 const PrevArrow = props => {
   const { className, style, onClick } = props;
@@ -9,7 +8,7 @@ const PrevArrow = props => {
     <div
       className={className}
       onClick={onClick}
-      style={{ ...style, zIndex: 1000, left: "25px", backgroundColor: "green" }}
+      style={{ ...style, zIndex: 1000, left: "25px", }}
     >
       1
     </div>
@@ -22,7 +21,7 @@ const NextArrow = props => {
       <div
         className={className}
         onClick={onClick}
-        style={{ ...style, zIndex: 1000, right: "25px", backgroundColor: "green" }}
+        style={{ ...style, zIndex: 1000, right: "25px" }}
       >
         1
       </div>
@@ -32,7 +31,7 @@ const NextArrow = props => {
 const Carousel = props => {
   const { data } = props;
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
