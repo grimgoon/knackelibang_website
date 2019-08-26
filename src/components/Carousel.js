@@ -1,6 +1,33 @@
 import React from "react";
 import Slider from "react-slick";
 import GatsbyImage from "gatsby-image";
+import ArrowImage from "../img/slider-nav.png";
+
+const PrevArrow = props => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{ ...style, zIndex: 1000, left: "25px", backgroundColor: "green" }}
+    >
+      1
+    </div>
+  );
+};
+
+const NextArrow = props => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        onClick={onClick}
+        style={{ ...style, zIndex: 1000, right: "25px", backgroundColor: "green" }}
+      >
+        1
+      </div>
+    );
+  };
 
 const Carousel = props => {
   const { data } = props;
@@ -9,15 +36,17 @@ const Carousel = props => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />
+    
   };
 
   const images = data.images.map((image, index) => {
-    console.log(image.image.childImageSharp.fixed);
-    return <GatsbyImage key={index} fixed={image.image.childImageSharp.fixed} />;
+    return (
+      <GatsbyImage key={index} fixed={image.image.childImageSharp.fixed} />
+    );
   });
-
-  console.log(images);
 
   return <Slider {...settings}>{images}</Slider>;
 };
