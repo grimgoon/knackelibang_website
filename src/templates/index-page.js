@@ -10,6 +10,7 @@ export const IndexPageTemplate = ({
 
   mainpitch,
 }) => {
+  console.log(mainpitch)
   return (
   <div>
       <h1>{mainpitch.title}</h1>
@@ -32,17 +33,10 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { index, social } = data;
-
   return (
     <Layout>
       <IndexPageTemplate
-        image={index.frontmatter.image}
-        title={index.frontmatter.title}
-        heading={index.frontmatter.heading}
-        subheading={index.frontmatter.subheading}
         mainpitch={index.frontmatter.mainpitch}
-        description={index.frontmatter.description}
-        intro={index.frontmatter.intro}
       />
     </Layout>
   )
@@ -62,7 +56,10 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     index: markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
+        mainpitch {
+          title
+          description
+        }
       }
     }
   }
