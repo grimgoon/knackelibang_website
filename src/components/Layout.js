@@ -62,7 +62,7 @@ export const TemplateWrapper = props => {
       <Header socials={data.socials.frontmatter} />
       <Carousel data={data.gallery.frontmatter.gallery} />
       <Navbar />
-      <div>{children}</div>
+      <div className="content">{children}</div>
       <Footer />
     </div>
   );
