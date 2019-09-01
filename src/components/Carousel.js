@@ -37,8 +37,8 @@ const Carousel = props => {
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />
-    
+    nextArrow: <NextArrow />,
+    arrows: true
   };
 
   const images = data.images.map((image, index) => {

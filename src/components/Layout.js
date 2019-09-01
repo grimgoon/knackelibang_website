@@ -10,7 +10,6 @@ import { withPrefix, graphql, StaticQuery } from "gatsby";
 
 export const TemplateWrapper = props => {
   const { children, socials, data } = props;
-  console.log(props);
   const { title, description } = useSiteMetadata();
   return (
     <div className="wrapper">
@@ -98,7 +97,7 @@ query {
         title
         image {
           childImageSharp {
-            fixed(width: 1000, height: 563 quality: 100) {
+            fixed(width: 1200, height: 600, quality: 100) {
               ...GatsbyImageSharpFixed
             }
       	  }

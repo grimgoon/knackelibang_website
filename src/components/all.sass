@@ -19,11 +19,10 @@ time, mark, audio, video
 	font: inherit
 	vertical-align: baseline
 
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
-	display: block;
+	display: block
 
 body 
 	line-height: 1
@@ -44,6 +43,12 @@ table
 	border-spacing: 0
 
 
+// Breakpoints
+$medium: 768px
+$large: 1224px
+
+
+
 // Knackelibang Colors:
 
 $primary: #000000
@@ -52,10 +57,16 @@ $body-color-invert: #2b2523
 
 // Wrapper
 .wrapper 
-  width: 60%
+  width: 100%
   margin: 0 auto
-  border-left: 1px solid $body-color-invert
-  border-right: 1px solid $body-color-invert
+  border-left: none
+  border-right: none
+  @media screen and ( min-width: $large)
+    width: 60%
+    border-left: 1px solid $body-color-invert
+    border-right: 1px solid $body-color-invert
+
+    
 
 // Social Icons
 .socialItems
@@ -212,13 +223,13 @@ footer.footer
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 
