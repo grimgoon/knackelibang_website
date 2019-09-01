@@ -12,6 +12,7 @@ export const TemplateWrapper = props => {
   const { children, socials, data } = props;
   const { title, description } = useSiteMetadata();
   return (
+    <>
     <div className="wrapper">
       <Helmet>
         <html lang="en" />
@@ -62,8 +63,9 @@ export const TemplateWrapper = props => {
       <Carousel data={data.gallery.frontmatter.gallery} />
       <Navbar />
       <div className="content">{children}</div>
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 };
 
