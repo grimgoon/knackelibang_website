@@ -99,7 +99,7 @@ query {
         title
         image {
           childImageSharp {
-            fixed(width: 1200, height: 600, quality: 100) {
+            fixed(width: 1200, height: 400, quality: 100) {
               ...GatsbyImageSharpFixed
             }
       	  }

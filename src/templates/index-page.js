@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   return (
   <div className="home">
       <h1>{mainpitch.title}</h1>
-      <h3>{mainpitch.description}</h3>
+      <p>{mainpitch.description}</p>
   </div>
 )
 }

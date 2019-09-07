@@ -1,0 +1,21 @@
+
+- Knackelibang Hemsida - Tobias
+
+-- https://www.aceteam.cl/
+
+
+Header 
+- Logo + Social Media
+- Knackelibang of the day!
+
+Navbar - Position Fixed
+- Home, About us, Games,  Contact, Blog
+
+
+Home 
+- Mission Statement
+
+- Blog 
+    
+
+
