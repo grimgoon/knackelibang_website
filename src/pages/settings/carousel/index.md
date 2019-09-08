@@ -1,12 +1,15 @@
 ---
-templateKey: carousel-page
 gallery:
   images:
-    - image: /img/blog-index.jpg
-      title: Image 1
-    - image: /img/products-full-width.jpg
-      title: Image 2
-    - image: /img/products-grid2.jpg
-      title: Image 3
+    - image: /img/knackelibangface.png
+      title: Knackelibang!
+    - image: /img/knackelibangbang.png
+      title: Knackelibang!
+    - image: /img/knackelibang2.png
+      title: Knackelibang!
+    - image: /img/cakeboy.png
+      title: Cakeboy!
+    - image: /img/bang.png
+      title: Knackelibang!
 ---
 
