@@ -1,4 +1,5 @@
 ---
+templateKey: carousel-page
 gallery:
   images:
     - image: /img/knackelibangface.png
