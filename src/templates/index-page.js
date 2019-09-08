@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
       <PageContent className="homeContent" content={content} />
       <h1 className="latestBlogsTitle">Latest Blogs</h1>
       <div className="latestBlogs">
-        {latestBlogs.map((latestBlog, index) => {
+        {latestBlogs && latestBlogs.map((latestBlog, index) => {
           const blog = latestBlog.node.frontmatter;
           return (
             <div className="item" key={index}>
