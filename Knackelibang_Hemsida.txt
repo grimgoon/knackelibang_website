@@ -16,6 +16,17 @@ Home
 - Mission Statement
 
 - Blog 
-    
+
+
+
+____
+TODO:
+Tags below title in the le blogs
+Fix Rich text
+Tag (Required, Possible)
+Fancy navbar buttons, woop a la Aceteam. 
+
+
+
 
 
