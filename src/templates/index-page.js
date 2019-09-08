@@ -8,28 +8,18 @@ import BlogRoll from '../components/BlogRoll'
 import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
-
+  content,
+  contentComponent,
   mainpitch,
 }) => {
-  console.log(mainpitch)
+  const PageContent = contentComponent || Content
+
   return (
   <div className="home">
       <h1>{mainpitch.title}</h1>
-      <p>{mainpitch.description}</p>
+      <PageContent className="content" content={content} />
   </div>
 )
-}
-
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -38,18 +28,12 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
+        content={index.html}
+        contentComponent={HTMLContent}
         mainpitch={index.frontmatter.mainpitch}
       />
     </Layout>
   )
-}
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 }
 
 export default IndexPage
@@ -57,6 +41,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     index: markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         mainpitch {
           title
