@@ -4,3 +4,5 @@ mainpitch:
   title: Why Kaldi
 ---
 Test
+
+![](/img/blog-index.jpg)
