@@ -1,5 +1,6 @@
 ---
 templateKey: games-page
+path: /games
 ---
 ![](/img/exampleimage.jpg)
 

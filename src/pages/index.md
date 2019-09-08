@@ -1,4 +1,5 @@
 ---
+path: /
 templateKey: index-page
 mainpitch:
   title: Why Kaldi

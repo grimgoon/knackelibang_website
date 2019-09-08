@@ -1,10 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import GatsbyImage from "gatsby-image";
 
 import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
 import Content, { HTMLContent } from "../components/Content";
 
 export const IndexPageTemplate = ({
@@ -14,7 +12,6 @@ export const IndexPageTemplate = ({
   latestBlogs
 }) => {
   const PageContent = contentComponent || Content;
-  console.log(latestBlogs);
   return (
     <div className="home">
       <h1>{mainpitch.title}</h1>

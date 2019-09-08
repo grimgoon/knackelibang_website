@@ -9,7 +9,7 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix, graphql, StaticQuery } from "gatsby";
 
 export const TemplateWrapper = props => {
-  const { children, socials, data } = props;
+  const { children, data } = props;
   const { title, description } = useSiteMetadata();
   return (
     <>
@@ -92,7 +92,7 @@ query {
       twitterUrl
     }
   }
-  gallery:  markdownRemark(frontmatter: {templateKey: {eq: "gallery-page"}}) {
+  gallery:  markdownRemark(frontmatter: {templateKey: {eq: "carousel-page"}}) {
     frontmatter {
      gallery {
       images {
