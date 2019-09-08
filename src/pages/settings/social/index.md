@@ -1,12 +1,12 @@
 ---
 templateKey: social-page
-facebook: true
-facebookUrl: http://www.facebook.com/battlerite
-instagram: true
+facebook: false
+facebookUrl: ''
+instagram: false
 instagramUrl: ''
-youtube: false
+youtube: true
 youtubeUrl: ''
 twitter: true
-twitterUrl: ''
+twitterUrl: 'https://twitter.com/TheKnackelibang'
 ---
 
