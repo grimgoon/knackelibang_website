@@ -5,4 +5,4 @@ mainpitch:
 ---
 Test
 
-![](/img/blog-index.jpg)
+![](/img/favicon-32x32.png)
