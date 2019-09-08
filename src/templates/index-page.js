@@ -45,7 +45,6 @@ export const pageQuery = graphql`
       frontmatter {
         mainpitch {
           title
-          description
         }
       }
     } 
