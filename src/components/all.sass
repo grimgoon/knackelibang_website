@@ -126,10 +126,8 @@ body
   background-color: $primary
   text-align: left
 
-
 // Home 
 .home
-  text-align: center
 
 .home>h1
   font-size: 2rem
@@ -137,21 +135,76 @@ body
 .home>h3
   font-size: 1.6rem
   padding-top: 8px
-  
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
+
+.homeContent
+  margin-top: 24px
+  text-align: left
+
+.home .latestBlogsTitle
+  margin-top: 32px
+
+.home .latestBlogs
+  margin-top: 24px
   display: flex
-  flex-wrap: wrap
-  justify-content: left
+  flex-direction: column
+  justify-content: space-between
+  @media screen and ( min-width: $large)
+    flex-direction: row 
+
+.home .latestBlogs .item
+  border: 1px solid $primary-invert
+  width: 100%
+  display: flex
+  margin-bottom: 24px
+  @media screen and ( min-width: $large)
+    width: 48%
+
+.home .latestBlogs .item .image
+  width: 0%
+  display: flex
+  @media screen and ( min-width: $medium)
+    width: initial
+  @media screen and ( min-width: $large)
+    width: 48%
+
+.home .latestBlogs .item .text
+  position: relative
+  display: flex
+  flex-direction: column
   align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+  width: 100%
+
+.home .latestBlogs .item .text h1
+  text-align: center
+  font-size: 1.2rem
+  padding: 12px
+
+.home .latestBlogs .item .text .date
+  font-style: italic
+  text-align: center
+  
+
+.home .latestBlogs .item .text a
+  background-color: $primary-invert
+  padding: 12px
+  text-decoration: none
+  color: $primary
+  display: block
+  position: relative
+  bottom: 0
+  margin: 0 auto
+  margin-top: 24px
+  text-align: center
+  width: auto
+  @media screen and ( min-width: $medium)
+    width: 260px
+  @media screen and ( min-width: $large)
+    width: calc(100% - 12px - 12px)
+    position: absolute
+    bottom: 0
+
+.home .latestBlogs .item .text a:hover
+  text-decoration: underline
 
 // Blog 
 
@@ -193,7 +246,7 @@ body
 
 footer
   margin-top: 40px
-  height: 180px
+  height: 160px
   background-color: $primary
   display: flex
   flex-direction: column
@@ -210,7 +263,7 @@ footer .copyright
 
 
 
-
+// OLD Example CSS from fork
 
 // blog roll
 .blog-list-item.is-featured
@@ -222,8 +275,6 @@ footer .copyright
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-
-// OLD Example CSS from fork
 //   // Helper Classes
 // .full-width-image-container
 //   width: 100vw
