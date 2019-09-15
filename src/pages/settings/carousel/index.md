@@ -1,6 +1,8 @@
 ---
 gallery:
   images:
+    - image: /img/image.png
+      title: A Test Image
     - image: /img/knackelibangface.png
       title: Knackelibang!
     - image: /img/knackelibangbang.png
@@ -11,7 +13,5 @@ gallery:
       title: Cakeboy!
     - image: /img/bang.png
       title: Knackelibang!
-    - image: /img/image.png
-      title: A Test Image
 ---
 
