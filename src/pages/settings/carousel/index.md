@@ -2,7 +2,7 @@
 gallery:
   images:
     - image: /img/image.png
-      title: A Test Image
+      title: Test
     - image: /img/knackelibangface.png
       title: Knackelibang!
     - image: /img/knackelibangbang.png
