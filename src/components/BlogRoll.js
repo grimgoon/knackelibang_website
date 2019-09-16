@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { kebabCase } from 'lodash'
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
@@ -7,8 +8,6 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-
-    console.log(data);
 
     return (
       <div>
@@ -19,10 +18,22 @@ class BlogRoll extends React.Component {
                 post.frontmatter.featuredpost ? "is-featured" : ""
               }`}
             >
+
+
               <header>
                 <Link className="title" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>
+                {post.frontmatter.tags && post.frontmatter.tags.length ? (
+              <div>
+                <div className="tagList">
+                  Tags: 
+                  {post.frontmatter.tags.map(tag => (
+                      <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}, </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
                 {post.frontmatter.featuredimage ? (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
@@ -72,6 +83,7 @@ export default () => (
               }
               frontmatter {
                 title
+                tags
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 description
