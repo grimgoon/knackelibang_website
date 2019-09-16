@@ -4,7 +4,7 @@
 -- https://www.aceteam.cl/
 
 
-Header 
+Header
 - Logo + Social Media
 - Knackelibang of the day!
 
@@ -21,11 +21,13 @@ Home
 
 ____
 TODO:
-Tags below title in the le blogs
+
 Fix Rich text
-Tag (Required, Possible)
+Tag (Required, If possible)
 Fancy navbar buttons, woop a la Aceteam. 
 
+DONE:
+Tags below title in the le blogs
 
 
 
