@@ -17,18 +17,12 @@ Home
 
 - Blog 
 
-
-
 ____
 TODO:
 
-Fix Rich text
-Tag (Required, If possible)
+Tag (Set as Required, If possible)
 Fancy navbar buttons, woop a la Aceteam. 
 
 DONE:
 Tags below title in the le blogs
-
-
-
-
+Fix Rich text Problems
