@@ -8,4 +8,4 @@ CEO and co-founder of Knackelibang. Bachelor degree in computer science from Uni
 
 ### Claes Eriksson
 
-Co-funder of Knackelibang. Arts degree from Singapore and bachelor degree in game deseign from University of Skövde.
+Co-funder of Knackelibang. Arts degree from Singapore and bachelor degree in game design from University of Skövde.
