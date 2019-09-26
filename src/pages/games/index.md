@@ -1,9 +1,10 @@
 ---
 templateKey: games-page
-path: /games
 ---
 ![](/img/exampleimage.jpg)
 
-### Battlerite
+### DioLight(?)
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species
+DioLight is our first game-project from Knackelibang, made as a "test-bed" for ideas and mechanics for a possible larger project.
+
+At its core, a first-person-shooter game in the same vain as Left-4-Dead, with a focus on hight moveability and gigantic sawm of enemies.
