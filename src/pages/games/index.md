@@ -1,10 +1,14 @@
 ---
 templateKey: games-page
 ---
-![](/img/exampleimage.jpg)
-
 ### DioLight(?)
 
-DioLight is our first game-project from Knackelibang, made as a "test-bed" for ideas and mechanics for a possible larger project.
+DioLight is at it's its core a coop FPS in the same vein as Left-4-Dead, with a focus on hight motability, overpowered weapons and gigantic sawm of enemies. The player must together navigate a surreal world-scape, finding and hunting down special enemies! 
 
-At its core, a first-person-shooter game in the same vain as Left-4-Dead, with a focus on hight moveability and gigantic sawm of enemies.
+Let the hunt begin!
+
+As our first game-project at Knackelibang, DioLight is partly made as a "test-bed" for crazier ideas and mechanics for a possible larger project down the road.
+
+DioLight Creation Road
+
+![](/img/diocreationtree02.png)
