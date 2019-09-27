@@ -3,6 +3,8 @@ templateKey: index-page
 mainpitch:
   title: Knackelibang!
 ---
-Knackelibang is a small Game Studio consisting of only two people, located in Skövde Sweden. We try to make games traditionally out of reach for such a small studio. Mostly focused on multiplayer coop games for now.
+Knackelibang is a small Game Studio consisting of only two people, located in Skövde Sweden. We make what we ourselves feel would be an awesome game. At the moment our focus are a first-person multiplayer coop games with our current project DioLight.
 
-![](/img/favicon-32x32.png)
+Above you can find out illustration-of-the-day feed with inspirations and ideas and beblow is our news blog.
+
+![](/img/doorpeek.png)
