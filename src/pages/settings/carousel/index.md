@@ -1,7 +1,8 @@
 ---
-templateKey: carousel-page
 gallery:
   images:
+    - image: /img/kotd_logo.png
+      title: kotd0000
     - image: /img/image.png
       title: Test
     - image: /img/knackelibangface.png
