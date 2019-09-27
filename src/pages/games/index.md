@@ -9,6 +9,6 @@ Let the hunt begin!
 
 As our first game-project at Knackelibang, DioLight is partly made as a "test-bed" for crazier ideas and mechanics for a possible larger project down the road.
 
-## DioLight Creation Road
+## DioLight Design Road
 
 ![](/img/diocreationtree02.png)
