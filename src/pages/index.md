@@ -7,4 +7,4 @@ Knackelibang is a small Game Studio consisting of only two people, located in Sk
 
 Above you can find out illustration-of-the-day feed with inspirations and ideas and beblow is our news blog.
 
-![](/img/doorpeek.png)
+![](/img/doorpeekicon.png)
