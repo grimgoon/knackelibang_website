@@ -47,10 +47,15 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { index, latestBlogs } = data;
+
+    // Hacky way of removing a weird image that distorts .png when using markdown html with the netlify cms.
+    const regex = /background-image: url\('data:image\/.*\);/gi;
+    const cleanHtml = index.html.replace(regex,"");
+
   return (
     <Layout>
       <IndexPageTemplate
-        content={index.html}
+        content={cleanHtml}
         contentComponent={HTMLContent}
         mainpitch={index.frontmatter.mainpitch}
         latestBlogs={latestBlogs.edges}

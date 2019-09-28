@@ -28,12 +28,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
+  // Hacky way of removing a weird image that distorts .png when using markdown html with the netlify cms.
+  const regex = /background-image: url\('data:image\/.*\);/gi;
+  const cleanHtml = post.html.replace(regex,"");
+
   return (
     <Layout>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
+        content={cleanHtml}
       />
     </Layout>
   )
