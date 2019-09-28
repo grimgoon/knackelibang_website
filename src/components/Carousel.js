@@ -41,7 +41,7 @@ const Carousel = props => {
     arrows: true
   };
 
-  const images = data.images.map((image, index) => {
+  const images = data.images.reverse().map((image, index) => {
     return (
       <GatsbyImage key={index} fixed={image.image.childImageSharp.fixed} />
     );
