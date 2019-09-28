@@ -43,7 +43,7 @@ const Carousel = props => {
 
   const images = data.images.reverse().map((image, index) => {
     return (
-      <GatsbyImage key={index} fixed={image.image.childImageSharp.fixed} />
+      <GatsbyImage key={index} fluid={image.image.childImageSharp.fluid} />
     );
   });
 
