@@ -42,6 +42,23 @@ table
   border-collapse: collapse
   border-spacing: 0
 
+h1
+  font-size: 2.0rem
+h2
+  font-size: 1.8rem
+h3
+  font-size: 1.6rem
+h4
+  font-size: 1.4rem
+h4
+  font-size: 1.2rem
+
+h1,h2,h3,h4
+  margin-bottom: 16px
+
+p
+  margin-bottom: 8px
+
 // Breakpoints
 $medium: 768px
 $large: 1224px
@@ -124,7 +141,6 @@ body
   text-align: left
 
 // Home
-.home
 
 .home>h1
   font-size: 2rem
@@ -146,7 +162,7 @@ body
   flex-direction: column
   justify-content: space-between
   @media screen and ( min-width: $large)
-    flex-direction: row
+    flex-direction: row 
 
 .home .latestBlogs .item
   border: 1px solid $primary-invert
@@ -179,6 +195,7 @@ body
 .home .latestBlogs .item .text .date
   font-style: italic
   text-align: center
+  
 
 .home .latestBlogs .item .text a
   background-color: $primary-invert
@@ -235,6 +252,9 @@ body
 
 .blogItem hr
   margin-top: 24px
+
+.blogItem .tagList
+  margin-bottom: 24px
 
 // Contact
 .contact
