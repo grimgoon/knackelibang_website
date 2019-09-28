@@ -7,41 +7,57 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-	margin: 0
-	padding: 0
-	border: 0
-	font-size: 100%
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
   font-family: 'Roboto', 'Open Sans', sans-serif
-	font: inherit
-	vertical-align: baseline
+  font: inherit
+  vertical-align: baseline
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section 
-	display: block
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
 
-body 
-	line-height: 1
+body
+  line-height: 1
 
-ol, ul 
-	list-style: none
+ol, ul
+  list-style: none
 
-blockquote, q 
-	quotes: none
+blockquote, q
+  quotes: none
 
 blockquote:before, blockquote:after,
-q:before, q:after 
-	content: ''
-	content: none
+q:before, q:after
+  content: ''
+  content: none
 
-table 
-	border-collapse: collapse
-	border-spacing: 0
+table
+  border-collapse: collapse
+  border-spacing: 0
 
+h1
+  font-size: 2.0rem
+h2
+  font-size: 1.8rem
+h3
+  font-size: 1.6rem
+h4
+  font-size: 1.4rem
+h4
+  font-size: 1.2rem
+
+h1,h2,h3,h4
+  margin-bottom: 16px
+
+p
+  margin-bottom: 8px
 
 // Breakpoints
 $medium: 768px
@@ -54,21 +70,21 @@ $primary-invert: #f37b4a
 $dark: #2b2523
 
 // Wrapper
-.wrapper 
+.wrapper
   width: 100%
   margin: 0 auto
-  @media screen and ( min-width: $large)
+  max-width: 1200px
+  @media screen and (min-width: $large)
     width: 63%
 
 body
   background-color: $background-color
   overflow-y: scroll
-    
 
 // Social Icons
 .socialItems
-    display: flex
-  
+  display: flex
+
 .socialIcon
   width: 26px
   height: 26px
@@ -81,7 +97,6 @@ body
 .socialIcon > img
   width: 24px
   height: 24px
-
 
 // Header
 .header
@@ -109,25 +124,23 @@ body
   z-index: 999
   // Weird margin between slider and header, should be a better solution
   margin-top: -6px
-  
+
 .navbar a
   margin-left: 8px
   color: $primary-invert
   font-style: inherit
   text-decoration: none
 
-
 .menuItems
   margin-left: 40px
 
-// Content 
-.content 
+// Content
+.content
   padding: 24px 36px
   background-color: $primary
   text-align: left
 
-// Home 
-.home
+// Home
 
 .home>h1
   font-size: 2rem
@@ -206,7 +219,7 @@ body
 .home .latestBlogs .item .text a:hover
   text-decoration: underline
 
-// Blog 
+// Blog
 
 .blogItem
   margin-bottom: 24px
@@ -236,10 +249,12 @@ body
 
 .blogItem .readMore:hover
   text-decoration: underline
- 
 
 .blogItem hr
-  margin-top: 24px 
+  margin-top: 24px
+
+.blogItem .tagList
+  margin-bottom: 24px
 
 // Contact
 .contact
@@ -270,17 +285,10 @@ footer
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: center 
+  align-items: center
 
 footer .copyright
   margin-top: 16px
-
-
-
-
-
-
-
 
 // OLD Example CSS from fork
 
