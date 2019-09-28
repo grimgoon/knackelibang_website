@@ -1,4 +1,5 @@
 ---
+templateKey: carousel-page
 gallery:
   images:
     - image: /img/kotd_logo.png
@@ -16,4 +17,3 @@ gallery:
     - image: /img/bang.png
       title: Knackelibang!
 ---
-
