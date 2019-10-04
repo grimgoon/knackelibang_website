@@ -4,6 +4,6 @@ gallery:
     - image: /img/kotd_logo.png
       title: kotd0000
     - image: /img/tillbanken.jpg
-      title: To the bank!
+      title: kotd0001
 ---
 
