@@ -52,7 +52,7 @@ collections:
         label: "Social Media"
         name: "social"
         fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "carousel"}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "carousel-page"}
         - {label: Facebook, name: facebook, widget: boolean, required: false}
         - {label: Facebook URL, name: facebookUrl, widget: string, required: false}
         - {label: Instagram, name: instagram, widget: boolean, required: false}
