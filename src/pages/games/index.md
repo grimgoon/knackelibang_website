@@ -21,22 +21,8 @@ All images here only show a glints behind the scenes as work-in-progress stuff, 
 
 ## Some Concepts
 
-![](/img/conceptstackenemies.jpg)
-
-![](/img/conceptstack02.jpg)
-
 ## Test Environment Screenshots
 
 Some ideas for level-designs! We aim for a rather odd surrealistic feel.
 
 ![](/img/desertcity02.jpg)
-
-![](/img/city_4.jpg)
-
-![](/img/screen4.png)
-
-![](/img/screenshoot.png)
-
-![](/img/screen02.jpg)
-
-![](/img/screenmeny.jpg)
