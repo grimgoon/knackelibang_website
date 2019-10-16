@@ -17,9 +17,15 @@ Here is a short visual-map of how our idea has evolved to DioLight. It started o
 
 # Test Visuals, Designs etc.
 
-All images here only show a glints behind the scenes as work-in-progress stuff, and sofar most likely everything will be changes as we go along.
+All images here only show a glints behind the scenes as work-in-progress stuff, and so far most likely everything will be changes as we go along.
 
-## Environments
+## Some Concepts
+
+![](/img/conceptstackenemies.jpg)
+
+![](/img/conceptstack02.jpg)
+
+## Test Environment Screenshots
 
 Some ideas for level-designs! We aim for a rather odd surrealistic feel.
 
@@ -29,8 +35,8 @@ Some ideas for level-designs! We aim for a rather odd surrealistic feel.
 
 ![](/img/screen4.png)
 
-![](/img/screen02.jpg)
+![](/img/screenshoot.png)
 
-![](/img/screen4.png)
+![](/img/screen02.jpg)
 
 ![](/img/screenmeny.jpg)
