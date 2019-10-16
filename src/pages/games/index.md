@@ -3,7 +3,7 @@ templateKey: games-page
 ---
 # DioLight(?)
 
-DioLight is at it's its core a coop FPS in the same vein as Left-4-Dead, with a focus on hight motability, overpowered weapons and gigantic swarm of enemies. The player must together navigate a surreal world-scape, finding and hunting down special enemies! 
+DioLight is at it's its core a coop FPS in the same vein as Left-4-Dead, with a focus on high moveability, overpowered weapons and gigantic swarm of enemies. The player must together navigate a surreal world-scape, finding and hunting down special enemies! 
 
 Let the hunt begin!
 
