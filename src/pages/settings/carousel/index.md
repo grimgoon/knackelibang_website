@@ -1,4 +1,5 @@
 ---
+template-key: "carousel-page"
 gallery:
   images:
     - image: /img/kotd_logo.png
