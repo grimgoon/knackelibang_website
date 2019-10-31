@@ -11,7 +11,7 @@ tags:
 ---
 I recently held a presentation about adding simple aerodynamics to any body in Unity. I thought I would share a showcase video and the source code here!
 
-
+![](/img/airplane.png "An airplane flying with physics")
 
 Video: https://www.reddit.com/r/Unity3D/comments/dklfh8/i_recently_held_a_presentation_of_a_simple/
 
