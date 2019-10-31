@@ -12,14 +12,19 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list", required: true}
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: true }
 
   - name: "pages"
     label: "Pages"
@@ -28,41 +33,119 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}]}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - {
+              label: Mainpitch,
+              name: mainpitch,
+              widget: object,
+              fields: [{ label: Title, name: title, widget: string }],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/games/index.md"
         label: "Games"
         name: "games"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "game-page"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "game-page",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "settings"
     label: "Settings"
-    files: 
+    files:
       - file: "src/pages/settings/social/index.md"
         label: "Social Media"
         name: "social"
         fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "carousel-page"}
-        - {label: Facebook, name: facebook, widget: boolean, required: false}
-        - {label: Facebook URL, name: facebookUrl, widget: string, required: false}
-        - {label: Instagram, name: instagram, widget: boolean, required: false}
-        - {label: Instagram URL, name: instagramUrl, widget: string, required: false}
-        - {label: Youtube, name: youtube, widget: boolean, required: false}
-        - {label: Youtube URL, name: youtubeUrl, widget: string, required: false}
-        - {label: Twitter, name: twitter, widget: boolean, required: false}
-        - {label: Twitter URL, name: twitterUrl, widget: string, required: false}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "social-page",
+            }
+          - {
+              label: Facebook,
+              name: facebook,
+              widget: boolean,
+              required: false,
+            }
+          - {
+              label: Facebook URL,
+              name: facebookUrl,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: Instagram,
+              name: instagram,
+              widget: boolean,
+              required: false,
+            }
+          - {
+              label: Instagram URL,
+              name: instagramUrl,
+              widget: string,
+              required: false,
+            }
+          - { label: Youtube, name: youtube, widget: boolean, required: false }
+          - {
+              label: Youtube URL,
+              name: youtubeUrl,
+              widget: string,
+              required: false,
+            }
+          - { label: Twitter, name: twitter, widget: boolean, required: false }
+          - {
+              label: Twitter URL,
+              name: twitterUrl,
+              widget: string,
+              required: false,
+            }
       - file: "src/pages/settings/carousel/index.md"
         label: "Knackelibang of the Day"
         name: "carousel"
         fields:
-        - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}]}]}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "carousel-page",
+            }
+          - {
+              label: Gallery,
+              name: gallery,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Images,
+                    name: images,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                      ],
+                  },
+                ],
+            }

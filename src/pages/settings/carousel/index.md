@@ -1,5 +1,5 @@
 ---
-template-key: "carousel-page"
+templateKey: carousel-page
 gallery:
   images:
     - image: /img/kotd_logo.png
@@ -11,4 +11,3 @@ gallery:
     - image: /img/knackelibangcomic05.jpg
       title: kotd0003
 ---
-
