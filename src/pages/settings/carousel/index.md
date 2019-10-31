@@ -10,4 +10,7 @@ gallery:
       title: kotd0002
     - image: /img/knackelibangcomic05.jpg
       title: kotd0003
+    - image: /img/exampleimage.jpg
+      title: tsest
 ---
+
