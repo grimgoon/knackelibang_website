@@ -9,6 +9,12 @@ gallery:
     - image: /img/knackelibangcomic03.jpg
       title: kotd0002
     - image: /img/knackelibangcomic05.jpg
-      title: kotd0003
+      title: kotd0004
+    - image: /img/comic05.jpg
+      title: kotd0005
+    - image: /img/comic06.jpg
+      title: kotd0006
+    - image: /img/comic07.png
+      title: kotd0007
 ---
 
