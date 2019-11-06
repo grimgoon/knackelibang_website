@@ -16,5 +16,7 @@ gallery:
       title: kotd0006
     - image: /img/comic07.png
       title: kotd0007
+    - image: /img/comic08.jpg
+      title: kotd0008
 ---
 
