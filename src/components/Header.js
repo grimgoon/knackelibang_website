@@ -7,7 +7,7 @@ const Header = ({ socials }) => {
   return (
     <div className="header">
       <Link to="/" className="logo" title="Knackelibang">
-        <img src={logo} alt="Knackelibang" style={{ width: "88px" }} />
+        <img src={logo} alt="Knackelibang" style={{ width: "160px" }} />
       </Link>
       <div className="socialItems">
         <SocialIcons socials={socials} />

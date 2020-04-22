@@ -12,7 +12,7 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer">
         <Link to="/" className="logo" title="Knackelibang">
-          <img src={logo} alt="Knackelibang" style={{ width: "140px" }} />
+          <img src={logo} alt="Knackelibang" style={{ width: "320px" }} />
         </Link>
         <p className="copyright">© Knackelibang 2019</p>
       </footer>
