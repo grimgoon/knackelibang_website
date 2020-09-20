@@ -24,17 +24,14 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video
-  margin: 0
-  padding: 0
-  border: 0
-  font-size: 100%
-  font-family: 'Roboto', 'Open Sans', sans-serif //'VT323', monospace, 
-  vertical-align: baseline
-  //color: $dark
 
-h1, h2, h3, h4, p
-  color: $dark
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+  font-family: 'Roboto'
+	font: inherit
+	vertical-align: baseline
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -75,6 +72,27 @@ h1,h2,h3,h4
 
 p
   margin-bottom: 8px
+
+
+h1
+  font-size: 2.0rem
+h2
+  font-size: 1.8rem
+h3
+  font-size: 1.6rem
+h4
+  font-size: 1.4rem
+h4
+  font-size: 1.2rem
+
+h1,h2,h3,h4
+  margin-bottom: 16px
+
+p
+  margin-bottom: 8px
+
+
+
 
 // Breakpoints
 $medium: 768px
@@ -294,6 +312,9 @@ body
 .blogItem .tagList
   margin-bottom: 24px
 
+.blogItem .tagList
+  margin-bottom: 24px
+
 // Contact
 .contact
   display: flex
@@ -328,7 +349,7 @@ footer
 footer .copyright
   margin-top: 16px
   color: $light
-
+  
 // OLD Example CSS from fork
 
 // blog roll
