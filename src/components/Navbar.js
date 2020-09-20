@@ -5,9 +5,17 @@ import github from "../img/github-icon.svg";
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
+
+    var overrideClass = "navbar";
+
+    if (props.overrideClass !== undefined) {
+      overrideClass = "navbarPromo";
+    }
+
     this.state = {
       active: false,
-      navBarActiveClass: ""
+      navBarActiveClass: "",
+      overrideClass,
     };
   }
 
@@ -15,17 +23,17 @@ const Navbar = class extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active"
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: ""
+              navBarActiveClass: "",
             });
       }
     );
@@ -33,7 +41,11 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="navbar" role="navigation" aria-label="main-navigation">
+      <nav
+        className={this.state.overrideClass}
+        role="navigation"
+        aria-label="main-navigation"
+      >
         <div className="menuItems">
           <Link className="navbar-item" to="/promo">
             Just Read The Instructions

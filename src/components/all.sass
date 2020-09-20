@@ -8,6 +8,10 @@ $primary-invert: #65aadb
 $dark: #2b2523 //#848484 //#b3b3b3
 $light: #dcdcdc
 
+// General
+$mainWidth: 1200px
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,7 +86,7 @@ $large: 1224px
 .wrapper
   width: 100%
   margin: 0 auto
-  max-width: 1200px
+  max-width: $mainWidth
   //@media screen and (min-width: $large)
   //  width: 63%
 
@@ -336,6 +340,47 @@ footer .copyright
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
+
+// PROMO WEBSITE
+
+  
+.wrapperPromo
+  width: 100%
+
+.contentPromo
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    section
+      width: 100%
+
+    img 
+      object-fit: cover
+      width: 100%
+
+.navbarPromo
+    position: sticky
+    display: flex
+    align-items: center
+    background-color: $dark
+    width: 100%
+    max-width: $mainWidth
+    top: 0
+    height: 60px
+    z-index: 999
+    // Weird margin between slider and header, should be a better solution
+    margin-top: -20px
+
+.contentPromoPage
+  width: 100%
+  max-width: $mainWidth
+  padding: 24px 36px
+  background-color: $primary
+  text-align: left
+  box-sizing: border-box
+
+
 
 //   // Helper Classes
 // .full-width-image-container
