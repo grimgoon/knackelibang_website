@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto%27')
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+
+// Knackelibang Colors:
+$background-color: #363636 // #161616// #545454 //#2b2523 // #848484 // #403d49
+$primary: #dcdcdc
+$primary-invert: #65aadb
+$dark: #2b2523 //#848484 //#b3b3b3
+$light: #dcdcdc
+
+// General
+$mainWidth: 1200px
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,9 +21,10 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
+
 time, mark, audio, video 
 	margin: 0
 	padding: 0
@@ -19,28 +34,44 @@ time, mark, audio, video
 	vertical-align: baseline
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section 
-	display: block
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
 
-body 
-	line-height: 1
+body
+  line-height: 1
 
-ol, ul 
-	list-style: none
+ol, ul
+  list-style: none
 
-blockquote, q 
-	quotes: none
+blockquote, q
+  quotes: none
 
 blockquote:before, blockquote:after,
-q:before, q:after 
-	content: ''
-	content: none
+q:before, q:after
+  content: ''
+  content: none
 
-table 
-	border-collapse: collapse
-	border-spacing: 0
+table
+  border-collapse: collapse
+  border-spacing: 0
 
+h1
+  font-size: 2.0rem
+h2
+  font-size: 1.8rem
+h3
+  font-size: 1.6rem
+h4
+  font-size: 1.4rem
+h4
+  font-size: 1.2rem
+
+h1,h2,h3,h4
+  margin-bottom: 16px
+
+p
+  margin-bottom: 8px
 
 
 h1
@@ -67,28 +98,24 @@ p
 $medium: 768px
 $large: 1224px
 
-// Knackelibang Colors:
-$background-color: #403d49
-$primary: #f4f4f4
-$primary-invert: #f37b4a
-$dark: #2b2523
+
 
 // Wrapper
-.wrapper 
+.wrapper
   width: 100%
   margin: 0 auto
-  @media screen and ( min-width: $large)
-    width: 63%
+  max-width: $mainWidth
+  //@media screen and (min-width: $large)
+  //  width: 63%
 
 body
   background-color: $background-color
   overflow-y: scroll
-    
 
 // Social Icons
 .socialItems
-    display: flex
-  
+  display: flex
+
 .socialIcon
   width: 26px
   height: 26px
@@ -101,7 +128,6 @@ body
 .socialIcon > img
   width: 24px
   height: 24px
-
 
 // Header
 .header
@@ -129,19 +155,38 @@ body
   z-index: 999
   // Weird margin between slider and header, should be a better solution
   margin-top: -6px
-  
-.navbar a
-  margin-left: 8px
-  color: $primary-invert
-  font-style: inherit
-  text-decoration: none
 
+//.navbar a
+.navbar-item
+  margin-left: 8px
+  color: $dark
+  font-style: inherit
+  font-weight: bold;
+  text-decoration: none
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  padding: 10px
+  background-color: $primary
+  display: inline-block
+  cursor: pointer
+  text-align: center
+
+.navbar a:hover
+  background: $primary-invert
+  color: $light
+  font-weight: bold;
+  //border: solid #FFFFFF 0px
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  border-radius: 2px
+  text-decoration: none
 
 .menuItems
   margin-left: 40px
 
-// Content 
-.content 
+// Content
+.content
   padding: 24px 36px
   background-color: $primary
   text-align: left
@@ -171,7 +216,7 @@ body
     flex-direction: row 
 
 .home .latestBlogs .item
-  border: 1px solid $primary-invert
+  border: 6px solid $primary-invert
   width: 100%
   display: flex
   margin-bottom: 24px
@@ -179,6 +224,7 @@ body
     width: 48%
 
 .home .latestBlogs .item .image
+  border: 6px solid $primary
   width: 0%
   display: flex
   @media screen and ( min-width: $medium)
@@ -192,6 +238,7 @@ body
   flex-direction: column
   align-items: center
   width: 100%
+  color: $primary
 
 .home .latestBlogs .item .text h1
   text-align: center
@@ -202,12 +249,15 @@ body
   font-style: italic
   text-align: center
   
+.home .latestBlogs .item .text a .button
+  color: $primary
 
 .home .latestBlogs .item .text a
   background-color: $primary-invert
   padding: 12px
   text-decoration: none
   color: $primary
+  font-weight: bold;
   display: block
   position: relative
   bottom: 0
@@ -225,7 +275,7 @@ body
 .home .latestBlogs .item .text a:hover
   text-decoration: underline
 
-// Blog 
+// Blog
 
 .blogItem
   margin-bottom: 24px
@@ -255,10 +305,12 @@ body
 
 .blogItem .readMore:hover
   text-decoration: underline
- 
 
 .blogItem hr
-  margin-top: 24px 
+  margin-top: 24px
+
+.blogItem .tagList
+  margin-bottom: 24px
 
 .blogItem .tagList
   margin-bottom: 24px
@@ -288,16 +340,16 @@ body
 footer
   margin-top: 40px
   height: 160px
-  background-color: $primary
+  background-color: $background-color
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: center 
+  align-items: center
 
 footer .copyright
   margin-top: 16px
-
-
+  color: $light
+  
 // OLD Example CSS from fork
 
 // blog roll
@@ -309,6 +361,47 @@ footer .copyright
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
+
+// PROMO WEBSITE
+
+  
+.wrapperPromo
+  width: 100%
+
+.contentPromo
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    section
+      width: 100%
+
+    img 
+      object-fit: cover
+      width: 100%
+
+.navbarPromo
+    position: sticky
+    display: flex
+    align-items: center
+    background-color: $dark
+    width: 100%
+    max-width: $mainWidth
+    top: 0
+    height: 60px
+    z-index: 999
+    // Weird margin between slider and header, should be a better solution
+    margin-top: -20px
+
+.contentPromoPage
+  width: 100%
+  max-width: $mainWidth
+  padding: 24px 36px
+  background-color: $primary
+  text-align: left
+  box-sizing: border-box
+
+
 
 //   // Helper Classes
 // .full-width-image-container

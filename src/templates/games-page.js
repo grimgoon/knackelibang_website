@@ -28,12 +28,18 @@ export const GamesPageTemplate = ({ title, content, contentComponent }) => {
 const GamesPage = ({ data }) => {
   const { markdownRemark: post } = data
 
+    // Hacky way of removing a weird image that adds a box-shadow and distorts .png when using markdown html with the netlify cms.
+    const regexImage = /background-image: url\('data:image\/.*\);/gi;
+    const rexexBoxShadow = /box-shadow: white.*;/gi;
+    let cleanHtml = post.html.replace(regexImage,"");
+    cleanHtml = cleanHtml.replace(rexexBoxShadow, "");
+  
   return (
     <Layout>
       <GamesPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
+        content={cleanHtml}
       />
     </Layout>
   )
