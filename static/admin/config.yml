@@ -25,6 +25,24 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: true }
+      
+  - file: "src/jrti.md"
+    label: "Just Read The Instructions"
+    name: "just_read_the_instructions"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "promo-page",
+        }
+      - {
+          label: Mainpitch,
+          name: mainpitch,
+          widget: object,
+        fields: [{ label: Title, name: title, widget: string }],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
     label: "Pages"

@@ -35,6 +35,9 @@ const Navbar = class extends React.Component {
     return (
       <nav className="navbar" role="navigation" aria-label="main-navigation">
         <div className="menuItems">
+          <Link className="navbar-item" to="/promo">
+            Just Read The Instructions
+          </Link>
           <Link className="navbar-item" to="/">
             Home
           </Link>
